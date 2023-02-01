@@ -2,7 +2,7 @@
 
 hexylena.css - hexylena's own CSS theme, encapsulating her aesthetic.
 
-## SYNOPSIS
+## Synopsis
 
 [Comic Mono is the default for dyslexia friendliness](index.html):
 
@@ -16,7 +16,7 @@ hexylena.css - hexylena's own CSS theme, encapsulating her aesthetic.
 <link rel="stylesheet" href="https://hexylena.galaxians.org/hexylena.css/hexylena-i.css" />
 ```
 
-## DESCRIPTION
+## Description
 
 Three CSS variables are available:
 
@@ -47,14 +47,14 @@ cat README.md | \
 ```
 
 
-## AUTHOR
+## Author
 
 hexylena
 
-## COPYRIGHT
+## Copyright
 
 AGPL-3.0
 
-## SEE ALSO
+## See Also
 
 Heavily inspired by [causal.agency](https://causal.agency/), though minus the syntax highlighting.

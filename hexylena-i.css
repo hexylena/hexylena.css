@@ -27,3 +27,4 @@ p { margin: 1em 0ex; }
 
 pre, :not(pre) > code { background-color: var(--code-background); color: var(--code-foreground); white-space: pre-wrap; word-wrap: break-word; padding: 0.1em;}
 pre{padding: 0.8em 0.1em;}
+h1,h2,h3 {text-transform: uppercase;}
