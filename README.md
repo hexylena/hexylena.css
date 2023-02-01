@@ -29,7 +29,13 @@ Three CSS variables are available:
 --font-family: monospace
 ```
 
-See a practical example in [ls.1.html](./ls.html) with the background colour overridden by setting the `--theme-color` on the background. The easiest way to use this is probably with the included pandoc template:
+See a practical example in [ls.1.html](./ls.html) with the background colour overridden in the `<head>`
+
+```html
+<style type="text/css">:root{--theme-color: blueviolet}</style>
+```
+
+The easiest way to use this is probably with the included pandoc template:
 
 ```bash
 cat README.md | \
