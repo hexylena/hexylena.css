@@ -1,17 +1,18 @@
+@font-face{font-family:Comic Mono;font-weight:normal;src:url(https://hexylena.galaxians.org/hexylena.css/ComicMono.ttf)}
+@font-face{font-family:Comic Mono;font-weight:bold;src:url(https://hexylena.galaxians.org/hexylena.css/ComicMono-Bold.ttf)}
+
 :root {
 	--theme-color: #CE3518;
 	--text-color: white;
 	--link-color: black;
 	--code-background: black;
 	--code-foreground: white;
+	--font-family: "Comic Mono";
 }
-
-@font-face{font-family:Comic Mono;font-weight:normal;src:url(https://hexylena.galaxians.org/hexylena.css/ComicMono.ttf)}
-@font-face{font-family:Comic Mono;font-weight:bold;src:url(https://hexylena.galaxians.org/hexylena.css/ComicMono-Bold.ttf)}
 
 a { color: var(--link-color); }
 a.permalink { text-decoration: none; }
-html { background-color: var(--theme-color); color: var(--text-color); font-family: monospace; line-height: 1.25em; font-family: "Comic Mono" }
+html { background-color: var(--theme-color); color: var(--text-color); line-height: 1.25em; font-family: var(--font-family, monospace); font-display: swap; }
 body { max-width: 80ch; margin: 1em auto; padding: 0 1ch; font }
 
 table { width: 100%; border-collapse: collapse; }

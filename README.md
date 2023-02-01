@@ -26,6 +26,7 @@ Three CSS variables are available:
 --link-color: black
 --code-background: black
 --code-foreground: white
+--font-family: monospace
 ```
 
 See a practical example in [ls.1.html](./ls.html). The easiest way to use this is probably with the included pandoc template:

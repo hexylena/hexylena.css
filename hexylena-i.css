@@ -1,19 +1,20 @@
+@font-face{font-family:"Iosevka Term Slab Extended";font-weight:normal;src:url(https://hexylena.galaxians.org/hexylena.css/iosevka-term-slab-extended.ttf)}
+@font-face{font-family:"Iosevka Term Slab Extended";font-weight:bold;src:url(https://hexylena.galaxians.org/hexylena.css/iosevka-term-slab-extendedbold.ttf)}
+@font-face{font-family:"Iosevka Term Slab Extended";font-style:italic;font-weight:bold;src:url(https://hexylena.galaxians.org/hexylena.css/iosevka-term-slab-extendedbolditalic.ttf)}
+@font-face{font-family:"Iosevka Term Slab Extended";font-style:italic;src:url(https://hexylena.galaxians.org/hexylena.css/iosevka-term-slab-extendeditalic.ttf)}
+
 :root {
 	--theme-color: #CE3518;
 	--text-color: white;
 	--link-color: black;
 	--code-background: black;
 	--code-foreground: white;
+	--font-family: "Iosevka Term Slab Extended";
 }
-
-@font-face{font-family:"Iosevka Term Slab Extended";font-weight:normal;src:url(https://hexylena.galaxians.org/hexylena.css/iosevka-term-slab-extended.ttf)}
-@font-face{font-family:"Iosevka Term Slab Extended";font-weight:bold;src:url(https://hexylena.galaxians.org/hexylena.css/iosevka-term-slab-extendedbold.ttf)}
-@font-face{font-family:"Iosevka Term Slab Extended";font-style:italic;font-weight:bold;src:url(https://hexylena.galaxians.org/hexylena.css/iosevka-term-slab-extendedbolditalic.ttf)}
-@font-face{font-family:"Iosevka Term Slab Extended";font-style:italic;src:url(https://hexylena.galaxians.org/hexylena.css/iosevka-term-slab-extendeditalic.ttf)}
 
 a { color: var(--link-color); }
 a.permalink { text-decoration: none; }
-html { background-color: var(--theme-color); color: var(--text-color); font-family: monospace; line-height: 1.25em; font-family: "Iosevka Term Slab Extended" }
+html { background-color: var(--theme-color); color: var(--text-color); line-height: 1.25em; font-family: var(--font-family, monospace); font-display: swap; }
 body { max-width: 80ch; margin: 1em auto; padding: 0 1ch; font }
 
 table { width: 100%; border-collapse: collapse; }
