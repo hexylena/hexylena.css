@@ -4,13 +4,13 @@ hexylena.css - hexylena's own CSS theme, encapsulating her aesthetic.
 
 ## SYNOPSIS
 
-Comic Mono is the default for dyslexia friendliness:
+[Comic Mono is the default for dyslexia friendliness](index.html):
 
 ```html
 <link rel="stylesheet" href="https://hexylena.galaxians.org/hexylena.css/hexylena.css" />
 ```
 
-A Iosevka variant is available:
+[A Iosevka variant is available](index-i.html):
 
 ```html
 <link rel="stylesheet" href="https://hexylena.galaxians.org/hexylena.css/hexylena-i.css" />
