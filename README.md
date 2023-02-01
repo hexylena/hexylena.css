@@ -28,7 +28,16 @@ Three CSS variables are available:
 --code-foreground: white
 ```
 
-See a practical example in [ls.1.html](./ls.html)
+See a practical example in [ls.1.html](./ls.html). The easiest way to use this is probably with the included pandoc template:
+
+```bash
+cat README.md | \
+    pandoc -t html --standalone \
+        --metadata title="hexylena.css(7)" \
+        --metadata subtitle="Miscellaneous Information Manual" \
+        --template ./pandoc.html \
+    > index.html
+```
 
 ## AUTHOR
 

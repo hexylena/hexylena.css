@@ -41,7 +41,13 @@ Miscellaneous Information Manual
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>--link-color<span class="in">: black</span></span>
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>--code-background<span class="in">: black</span></span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>--code-foreground<span class="in">: white</span></span></code></pre></div>
-<p>See a practical example in <a href="./ls.html">ls.1.html</a></p>
+<p>See a practical example in <a href="./ls.html">ls.1.html</a>. The easiest way to use this is probably with the included pandoc template:</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> README.md <span class="kw">|</span> <span class="dt">\</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">pandoc</span> <span class="at">-t</span> html <span class="at">--standalone</span> <span class="dt">\</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">--metadata</span> title=<span class="st">&quot;hexylena.css(7)&quot;</span> <span class="dt">\</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">--metadata</span> subtitle=<span class="st">&quot;Miscellaneous Information Manual&quot;</span> <span class="dt">\</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">--template</span> ./pandoc.html <span class="dt">\</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">&gt;</span> index.html</span></code></pre></div>
 <h2 id="author">AUTHOR</h2>
 <p>hexylena</p>
 <h2 id="copyright">COPYRIGHT</h2>
