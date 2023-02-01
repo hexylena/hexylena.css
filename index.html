@@ -1,73 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
 <head>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="icon" type="image/x-icon" href="/assets/favicon.png">
-	<link crossorigin="anonymous" media="all" rel="stylesheet" href="https://hexylena.galaxians.org/hexylena.css/hexylena.css" />
-	<title>hexylena(7)</title>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>hexylena.css(7)</title>
+  <link rel="stylesheet" href="https://hexylena.galaxians.org/hexylena.css/hexylena.css" />
+  <link rel="stylesheet" href="hexylena.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
 </head>
 <body>
+<header id="title-block-header">
 
 	<table class="head">
 		<tr>
-			<td class="head-ltitle"><a href="/">LS(1)</a></td>
-			<td class="head-vol">User Commands</td>
-			<td class="head-rtitle">LS(1)</td>
+			<td class="head-ltitle">
+				hexylena.css(7)
+			</td>
+			<td class="head-vol">
+Miscellaneous Information Manual
+			</td>
+			<td class="head-rtitle">hexylena.css(7)</td>
 		</tr>
 	</table>
 
-	<section>
-		<h1 id="NAME"><a class="permalink" href="#NAME">NAME</a></h1>
-		<p><code>ls</code> — <span>list directory contents</span>
-	</section>
-
-	<section>
-		<h1 id="SYNOPSIS"><a class="permalink" href="#SYNOPSIS">SYNOPSIS</a></h1>
-		<p><b>ls</b> [<i>OPTION</i>]... [<i>FILE</i>]...</p>
-	</section>
-
-	<section>
-		<h1 id="DESCRIPTION"><a class="permalink" href="#DESCRIPTION">DESCRIPTION</a></h1>
-		<article>
-
-<p>
-List
-information about the FILEs (the current directory by
-default). Sort entries alphabetically if none of
-<b>&minus;cftuvSUX</b> nor <b>&minus;&minus;sort</b> is
-specified.</p>
-
-<p>Mandatory
-arguments to long options are mandatory for short options
-too.<br>
-
-		<dl>
-			<dt><b>-a, --all</b></dt>
-			<dd>do not ignore entries starting with .</dd>
-
-			<dt><b>-A, --almost-all</b></dt>
-			<dd>do not list implied . and ..</dd>
-		</dl>
-
-		<p>...</p>
-
-</p>
-
-		</article>
-	</section>
-
-	<section>
-	<h1 id="SEE_ALSO"><a class="permalink" href="#SEE_ALSO">SEE ALSO</a></h1>
-	<p><a rel="me" href="https://github.com/hexylena">hexylena@github.com</a></p>
-	</section>
+<h1 id="hexylena.css">hexylena.css</h1>
+<p>hexylena.css - hexylena’s own CSS theme, encapsulating her aesthetic.</p>
+<h2 id="synopsis">SYNOPSIS</h2>
+<p>Comic Mono is the default for dyslexia friendliness:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;link</span> <span class="er">rel</span><span class="ot">=</span><span class="st">&quot;stylesheet&quot;</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;https://hexylena.galaxians.org/hexylena.css/hexylena.css&quot;</span> <span class="kw">/&gt;</span></span></code></pre></div>
+<p>A Iosevka variant is available:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;link</span> <span class="er">rel</span><span class="ot">=</span><span class="st">&quot;stylesheet&quot;</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;https://hexylena.galaxians.org/hexylena.css/hexylena-i.css&quot;</span> <span class="kw">/&gt;</span></span></code></pre></div>
+<h2 id="description">DESCRIPTION</h2>
+<p>Three CSS variables are available:</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>--theme-color<span class="in">: #CE3518</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>--text-color<span class="in">: white</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>--link-color<span class="in">: black</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>--code-background<span class="in">: black</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>--code-foreground<span class="in">: white</span></span></code></pre></div>
+<h2 id="author">AUTHOR</h2>
+<p>hexylena</p>
+<h2 id="copyright">COPYRIGHT</h2>
+<p>AGPL-3.0</p>
+<h2 id="see-also">SEE ALSO</h2>
+<p>Heavily inspired by <a href="https://causal.agency/">causal.agency</a>, though minus the syntax highlighting.</p>
 
 	<table class="foot">
 		<tr>
-			<td class="foot-date">2023</td>
-			<td class="foot-os">Galaxians Group</td>
+			<td class="foot-date"></td>
+			<td class="foot-os">
+			</td>
 		</tr>
 	</table>
+
 
 </body>
 </html>

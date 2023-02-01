@@ -2,6 +2,8 @@
 	--theme-color: #CE3518;
 	--text-color: white;
 	--link-color: black;
+	--code-background: black;
+	--code-foreground: white;
 }
 
 @font-face{font-family:Comic Mono;font-weight:normal;src:url(https://hexylena.galaxians.org/hexylena.css/ComicMono.ttf)}
@@ -18,4 +20,6 @@ table.foot { margin-top: 1em; }
 td.head-rtitle, td.foot-os { text-align: right; }
 td.head-vol { text-align: center; }
 
-p { margin: 1ex 0ex; }
+p { margin: 1em 0ex; }
+
+pre { background-color: var(--code-background); color: var(--code-foreground); white-space: pre-wrap; word-wrap: break-word; padding: 0.5em;}
