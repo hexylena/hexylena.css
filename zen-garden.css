@@ -1,0 +1,36 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on hexylena.css by hexylena. */
+:root {
+	--theme-color: #CE3518;
+	--text-color: white;
+	--link-color: black;
+	--code-background: black;
+	--code-foreground: white;
+	--font-family: monospace;
+}
+
+a { color: var(--link-color); }
+a.permalink { text-decoration: none; }
+html { background-color: var(--theme-color); color: var(--text-color); line-height: 1.25em; font-family: var(--font-family, monospace); font-display: swap; }
+body { max-width: 80ch; margin: 1em auto; padding: 0 1ch; }
+
+table { width: 100%; border-collapse: collapse; }
+table.foot { margin-top: 1em; }
+
+td.head-rtitle, td.foot-os { text-align: right; }
+td.head-vol { text-align: center; }
+
+p { margin: 1em 0ex; }
+
+pre, :not(pre) > code { background-color: var(--code-background); color: var(--code-foreground); white-space: pre-wrap; word-wrap: break-word; padding: 0.1em;}
+pre{padding: 0.8em 0.1em;}
+h1,h2,h3 {text-transform: uppercase;}
+
+
+/* specific divs */
+header {
+	display: flex;
+	justify-content: space-between;
+}
