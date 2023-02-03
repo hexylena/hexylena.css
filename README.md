@@ -18,17 +18,6 @@ hexylena.css - hexylena's own CSS theme, encapsulating her aesthetic.
 
 ## Description
 
-Three CSS variables are available:
-
-```css
---theme-color: #CE3518
---text-color: white
---link-color: black
---code-background: black
---code-foreground: white
---font-family: monospace
-```
-
 See a practical example in [ls.1.html](./ls.html) with the background colour overridden in the `<head>`
 
 ```html
@@ -46,6 +35,28 @@ cat README.md | \
     > index.html
 ```
 
+## Environment
+
+These CSS variables are available:
+
+theme-color
+:    `--theme-color: #CE3518`, really just the background
+
+text-color
+:    `--text-color: white`, all text minus links
+
+link-color
+:    `--link-color: black`, links
+
+code-background
+:    `--code-background: black`
+
+code-foreground
+:    `--code-foreground: white`
+
+font-family
+:    `--font-family: monospace`, go wild
+
 
 ## Author
 
@@ -55,6 +66,18 @@ hexylena
 
 AGPL-3.0
 
+## Files
+
+[hexylena.css.git](https://github.com/hexylena/hexylena.css.git)
+:    The repository (GitHub)
+
+[hexylena.css](https://hexylena.galaxians.org/hexylena.css/hexylena.css)
+:    The comic mono version
+
+[hexylena.css](https://hexylena.galaxians.org/hexylena.css/hexylena-i.css)
+:    The iosevka version
+
+
 ## See Also
 
-Heavily inspired by [causal.agency](https://causal.agency/), though minus the syntax highlighting.
+Heavily inspired by [causal.agency(7)](https://causal.agency/), though minus the syntax highlighting.

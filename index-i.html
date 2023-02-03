@@ -35,28 +35,55 @@ Miscellaneous Information Manual
 <p><a href="index-i.html">A Iosevka variant is available</a>:</p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;link</span> <span class="er">rel</span><span class="ot">=</span><span class="st">&quot;stylesheet&quot;</span> <span class="er">href</span><span class="ot">=</span><span class="st">&quot;https://hexylena.galaxians.org/hexylena.css/hexylena-i.css&quot;</span> <span class="kw">/&gt;</span></span></code></pre></div>
 <h2 id="description">Description</h2>
-<p>Three CSS variables are available:</p>
-<div class="sourceCode" id="cb3"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>--theme-color<span class="in">: #CE3518</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>--text-color<span class="in">: white</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>--link-color<span class="in">: black</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>--code-background<span class="in">: black</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>--code-foreground<span class="in">: white</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>--font-family<span class="in">: monospace</span></span></code></pre></div>
 <p>See a practical example in <a href="./ls.html">ls.1.html</a> with the background colour overridden in the <code>&lt;head&gt;</code></p>
-<div class="sourceCode" id="cb4"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;style</span> <span class="er">type</span><span class="ot">=</span><span class="st">&quot;text/css&quot;</span><span class="kw">&gt;</span><span class="in">:root</span>{<span class="va">--theme-color</span>: <span class="cn">blueviolet</span>}<span class="kw">&lt;/style&gt;</span></span></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;style</span> <span class="er">type</span><span class="ot">=</span><span class="st">&quot;text/css&quot;</span><span class="kw">&gt;</span><span class="in">:root</span>{<span class="va">--theme-color</span>: <span class="cn">blueviolet</span>}<span class="kw">&lt;/style&gt;</span></span></code></pre></div>
 <p>The easiest way to use this is probably with the included pandoc template:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> README.md <span class="kw">|</span> <span class="dt">\</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">pandoc</span> <span class="at">-t</span> html <span class="at">--standalone</span> <span class="dt">\</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">--metadata</span> title=<span class="st">&quot;hexylena.css(7)&quot;</span> <span class="dt">\</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">--metadata</span> subtitle=<span class="st">&quot;Miscellaneous Information Manual&quot;</span> <span class="dt">\</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">--template</span> ./pandoc.html <span class="dt">\</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">&gt;</span> index.html</span></code></pre></div>
+<div class="sourceCode" id="cb4"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span> README.md <span class="kw">|</span> <span class="dt">\</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    <span class="ex">pandoc</span> <span class="at">-t</span> html <span class="at">--standalone</span> <span class="dt">\</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">--metadata</span> title=<span class="st">&quot;hexylena.css(7)&quot;</span> <span class="dt">\</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>        <span class="at">--metadata</span> subtitle=<span class="st">&quot;Miscellaneous Information Manual&quot;</span> <span class="dt">\</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>        <span class="at">--template</span> ./pandoc.html <span class="dt">\</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="op">&gt;</span> index.html</span></code></pre></div>
+<h2 id="environment">Environment</h2>
+<p>These CSS variables are available:</p>
+<dl>
+<dt>theme-color</dt>
+<dd><code>--theme-color: #CE3518</code>, really just the background
+</dd>
+<dt>text-color</dt>
+<dd><code>--text-color: white</code>, all text minus links
+</dd>
+<dt>link-color</dt>
+<dd><code>--link-color: black</code>, links
+</dd>
+<dt>code-background</dt>
+<dd><code>--code-background: black</code>
+</dd>
+<dt>code-foreground</dt>
+<dd><code>--code-foreground: white</code>
+</dd>
+<dt>font-family</dt>
+<dd><code>--font-family: monospace</code>, go wild
+</dd>
+</dl>
 <h2 id="author">Author</h2>
 <p>hexylena</p>
 <h2 id="copyright">Copyright</h2>
 <p>AGPL-3.0</p>
+<h2 id="files">Files</h2>
+<dl>
+<dt><a href="https://github.com/hexylena/hexylena.css.git">hexylena.css.git</a></dt>
+<dd>The repository (GitHub)
+</dd>
+<dt><a href="https://hexylena.galaxians.org/hexylena.css/hexylena.css">hexylena.css</a></dt>
+<dd>The comic mono version
+</dd>
+<dt><a href="https://hexylena.galaxians.org/hexylena.css/hexylena-i.css">hexylena.css</a></dt>
+<dd>The iosevka version
+</dd>
+</dl>
 <h2 id="see-also">See Also</h2>
-<p>Heavily inspired by <a href="https://causal.agency/">causal.agency</a>, though minus the syntax highlighting.</p>
+<p>Heavily inspired by <a href="https://causal.agency/">causal.agency(7)</a>, though minus the syntax highlighting.</p>
 
 	<table class="foot">
 		<tr>
